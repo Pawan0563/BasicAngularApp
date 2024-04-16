@@ -1,0 +1,56 @@
+<p>movies works!</p>
+
+
+<!-- @@@@@####create custom list #####-->
+
+
+<!-- <section>
+  <div class="row">
+    <div class="from-group col-md-3">
+      <input type="from-control" type="text" name="title" placeholder="Movie Title" [(ngModel)]="title">
+    </div>
+
+    <div class="from-group col-md-3">
+      <input type="from-control" type="text" name="title" placeholder="Movie ReleseDate" [(ngModel)]="releaseDate" />
+    </div>
+
+    <div class="from-group col-md-3">
+      <input type="from-control" type="text" name="title" placeholder="Movie Url" [(ngModel)]="movieUrl" />
+    </div>
+    <div class="from-group">
+      <button class="btn-btn-primary" (click)="submitForm()">Submit</button>
+    </div>
+  </div>
+
+
+
+
+
+</section>
+  -->
+  <div class="mivi">
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Iterate over each movie in movieList -->
+        <div class="col-md-4 mb-4" *ngFor="let movie of movieList">
+          <div class="card">
+            <!-- Use a container to maintain aspect ratio -->
+            <div class="image-container">
+              <img src="{{movie.movieUrl}}" class="card-img-top" alt="Movie Poster">
+            </div>
+            <div class="card-body">
+              <p appChangeColor>Name: {{ movie.title }}</p>
+              <p>Release Date: {{ movie.releaseDate }}</p>
+              <button routerLink="{{movie.Url}}"class="btn btn-danger">More Info</button>
+              <!-- Add more details or actions here if needed -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  

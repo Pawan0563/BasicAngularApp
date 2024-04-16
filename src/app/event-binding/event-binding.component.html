@@ -1,0 +1,14 @@
+<p>event-binding works!</p>
+
+<!-- <button (click)="clickme()" on>Click Me</button> -->
+<br>
+<br>
+{{"myNumber:-"+number}}
+
+<br><br>
+<input type="text" name="textbox" value="pawan" (click)="getValue($event)">
+
+<br><br>
+<h2>Template reference variable</h2>
+<input #myRef type="text" name="textbox" value="pawan" /> 
+<button (click)="clickme(myRef)" on>Click Me</button>

@@ -32,4 +32,15 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('BasicAngularApp app is running!');
   });
+
+
+  export class Movie {
+    constructor(
+      public movieImage: string,
+      public movieName: string,
+      public releaseDate: string
+    ) {}
+  }
+  
+
 });
